@@ -13,6 +13,11 @@
       <ion-button expand= "block" class="ion-padding" (click)="Scan()"> Scan QR Code 
         <ion-icon name="qr-scanner"  slot="end"></ion-icon>
       </ion-button>
+    <ion-card *ngIf="scannedCode">
+      <ion-card-content>
+        Result from Scan: {{scannedCode}}
+      </ion-card-content>
+    </ion-card>
       </ion-col>
       </ion-row>
     </ion-grid>
